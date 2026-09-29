@@ -12,6 +12,7 @@ class InverterCapability:
     kva: float
     kw_available: float
     kvar_limit: float
+    grid_forming_capable: bool = False
 
 
 def interpolate_curve(points:list[VoltVarPoint],voltage_pu:float):
